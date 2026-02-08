@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Health Wallet</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="wallet.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar bg-white shadow-sm">
+    <div class="container">
+        <span class="navbar-brand fw-bold text-primary">
+            📁 Digital Health Wallet
+        </span>
+        <a href="patient_dashboard.html" class="btn btn-outline-secondary btn-sm">
+            Back to Dashboard
+        </a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    <!-- UPLOAD SECTION -->
+    <div class="card p-4 mb-4">
+        <h5 class="mb-3">Upload Medical Record</h5>
+
+        <div class="row">
+            <div class="col-md-4">
+                <label class="form-label">Report Type</label>
+                <select class="form-control">
+                    <option>Prescription</option>
+                    <option>Lab Report</option>
+                    <option>Scan / X-Ray</option>
+                </select>
+            </div>
+
+            <div class="col-md-5">
+                <label class="form-label">Select File</label>
+                <input type="file" class="form-control">
+            </div>
+
+            <div class="col-md-3 d-flex align-items-end">
+                <button class="btn btn-success w-100">
+                    Upload
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- RECORDS LIST -->
+    <div class="card p-4">
+        <h5 class="mb-3">Uploaded Records</h5>
+
+        <table class="table align-middle">
+            <thead>
+                <tr>
+                    <th>Report Name</th>
+                    <th>Type</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Blood Test Report</td>
+                    <td>Lab Report</td>
+                    <td>05 Feb 2026</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-primary">View</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Doctor Prescription</td>
+                    <td>Prescription</td>
+                    <td>28 Jan 2026</td>
+                    <td>
+                        <a href="#" class="btn btn-sm btn-outline-primary">View</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+</body>
+</html>
