@@ -32,6 +32,7 @@ body {
 .auth-form {
     width: 50%;
     background: #ffffff;
+    
     padding: 70px;
     display: flex;
     flex-direction: column;
