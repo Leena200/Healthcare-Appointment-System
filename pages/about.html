@@ -8,37 +8,111 @@
     <link rel="stylesheet" href="about.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
-    <div class="container">
-        <a class="navbar-brand fw-bold text-primary" href="#">
+<!--Navbar-->
+<nav class="navbar">
+    <div class="nav-container">
+
+        <!-- LOGO -->
+        <div class="logo">
             🏥 Smart Healthcare
-        </a>
-        <div>
-            <a href="/index.html">Home</a>
-        <a href="pages/about.html">About</a>
         </div>
-        
-        <div>
-            <a href="pages/login.html" class="btn btn-outline-primary me-2">Login</a>
-            <a href="pages/patient_register.html" class="btn btn-success">Register</a>
+
+        <!-- NAV LINKS -->
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="pages/about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+           
+        </ul>
+
+        <!-- AUTH BUTTONS -->
+        <div class="nav-buttons">
+            <a href="login.html" class="btn login-btn">Login</a>
+            <a href="patient_register.html" class="btn register-btn">Register</a>
         </div>
+
     </div>
 </nav>
 
 
 
-<section class="hero">
-    <h1>About Us</h1>
-    
-</section>
 
 <section class="about">
-    <h2>Who We Are</h2>
-    <p>
+<div class="container my-5">
+    <div class="row align-items-center">
+        
+        <!-- Left Text -->
+        <div class="col-md-6">
+           <h2>About Us</h2>
+            <p > 
         Smart Healthcare is a modern healthcare center committed to providing
         high-quality medical services using advanced technology and experienced
         healthcare professionals.
+         provide access to high-quality healthcare utilizing advanced technology and 
+         an innovative method of diagnosis to provide treatment options, both surgical 
+         and non-surgical, for many different specialties. Our physicians and surgeons work closely
+          with allied health professionals using a patient-centered philosophy to incorporate the latest
+           developments in modern medicine, along with a holistic approach to healing, 
+         resulting in providing the patient with an optimal setting for total wellness.<br>
+         Our efforts extend beyond mere patient treatment—we are dedicated to preventive care, 
+         early intervention, and long-term health management. This has made us a leading healthcare
+          destination in Nashik and Maharashtra, recognized for our reliability, transparency, and medical excellence.
     </p>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-md-6 text-center">
+           <img src="/images/about.avif" alt="" >
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section class="vision-mission">
+
+<div class="container my-5">
+    <div class="row align-items-center">
+        
+        <!-- Left Text -->
+        <div class="col-md-6">
+           <h2> Our Mission Is to Provide
+        a Professional & Honest Approach to Health Care</h2>
+        </div>
+
+        <!-- Right Image -->
+        <div class="col-md-6 text-center">
+           <img src="/images/vision.webp" alt="" >
+        </div>
+
+    </div>
+</div>
+<br>
+    <div class="vm-box">
+        <h3>🌟 Our Vision</h3>
+        <p>
+            Our vision  is to lead the way in evidence-based medical care,
+             guided by integrity and compassion.
+
+ We are driven by a desire to pioneer new knowledge and technologies that benefit community health.
+ Our goal is to cultivate a culture of togetherness among our staff, where everyone collaborates
+  to enhance patient outcomes and well-being.
+ Our vision is to be a center that provides new knowledge, innovation and technology related to
+  the healthcare industry.
+  </p>
+    </div>
+
+    <div class="vm-box">
+        <h3>🎯 Our Mission</h3>
+        <p>
+            our mission is simple yet profound: to build a healthcare system rooted in care,
+             compassion, and commitment. We are dedicated to harnessing the latest medical practices and 
+            technology to provide every patient with comprehensive and compassionate care.
+            To deliver accessible, affordable, and high-quality healthcare by
+            combining experienced doctors, modern infrastructure, and digital
+            healthcare solutions.
+        </p>
+    </div>
 </section>
 
 <section class="services">
@@ -48,21 +122,12 @@
         <div class="service-card">Cardiology</div>
         <div class="service-card">Orthopedics</div>
         <div class="service-card">Pediatrics</div>
-        <div class="service-card">Dental Care</div>
+        
         <div class="service-card">Neurology</div>
     </div>
 </section>
 
-<section class="facilities">
-    <h2>World-Class Facilities</h2>
-    <ul>
-        <li>24/7 Emergency & Ambulance Services</li>
-        <li>Advanced Diagnostic Laboratories</li>
-        <li>Digital Medical Records</li>
-        <li>Online Appointment Scheduling</li>
-        <li>Modern Operation Theatres</li>
-    </ul>
-</section>
+
 
 <section class="doctors">
     <h2>Our Expert Doctors</h2>
@@ -73,24 +138,116 @@
 
 <section class="why-us">
     <h2>Why Choose Smart Healthcare?</h2>
-    <div class="why-grid">
-        <div>✔ Experienced Doctors</div>
-        <div>✔ Modern Infrastructure</div>
-        <div>✔ Patient-Centered Care</div>
-        <div>✔ Secure Digital Records</div>
-        <div>✔ Quick Appointment Booking</div>
+
+    <div class="slider-container">
+        <button class="nav-btn left" onclick="prevSlide()">&#10094;</button>
+
+        <div class="slider-window">
+            <div class="slider-track" id="sliderTrack">
+
+                <div class="why-card">
+                    <h3>Qualified Doctors</h3>
+                    <p>Highly experienced doctors across all specialties.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency services with modern ambulances.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>24 Hours Service</h3>
+                    <p>Round-the-clock medical and support services.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>Advanced Medical Technology</h3>
+                    <p>State-of-the-art equipment for accurate diagnosis.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>Easy Online Appointments</h3>
+                    <p>Book doctor appointments quickly and easily.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <button class="nav-btn right" onclick="nextSlide()">&#10095;</button>
     </div>
 </section>
 
+
+
 <footer class="footer">
-    <div class="container text-center">
-        <p class="mb-1 fw-bold">Smart Healthcare Appointment Scheduling System</p>
-        <p class="small">
-            Final Year Project | HTML, CSS, JavaScript, Flask, MySQL
-        </p>
-        
+    <div class="footer-container">
+
+        <!-- Hospital Info -->
+        <div class="footer-box">
+            <h3>Smart Healthcare</h3>
+            <p>
+                Providing trusted medical care with modern technology.
+                Your health is our top priority.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-box">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-box">
+            <h4>Our Services</h4>
+            <ul>
+                <li>General Medicine</li>
+                <li>Cardiology</li>
+                
+                <li>Pediatrics</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-box">
+            <h4>Contact Us</h4>
+            <p>📍 Pune, Maharashtra</p>
+            <p>📞 +91 98765 43210</p>
+            <p>✉ smarthealthcare@gmail.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Smart Healthcare | All Rights Reserved
     </div>
 </footer>
+
+<script>
+let currentIndex = 0;
+const cardWidth = 320; // card + margin
+const track = document.getElementById("sliderTrack");
+const maxIndex = track.children.length - 3; // 3 visible cards
+
+function nextSlide() {
+    if (currentIndex < maxIndex) {
+        currentIndex++;
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+}
+
+function prevSlide() {
+    if (currentIndex > 0) {
+        currentIndex--;
+        track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+}
+</script>
 
 
 </body>

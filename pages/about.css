@@ -10,17 +10,73 @@ body {
     color: #333;
 }
 
-/* HERO */
-.hero {
-   
-    color:black;
-    padding: 60px ;
-    text-align: center;
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #0d6efd;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login-btn {
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+}
+
+.register-btn {
+    background-color: #0d6efd;
+    color: white;
+}
+
+
 
 /* SECTIONS */
 section {
-    padding: 50px 80px;
+    padding: 30px 40px;
     background: white;
     margin-bottom: 20px;
 }
@@ -29,7 +85,25 @@ h2 {
     margin-bottom: 20px;
     color: #0d6efd;
 }
+/* VISION */
+.vision-mission {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    background-color: #f4f7fb;
+}
 
+.vm-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.08);
+}
+
+.vm-box h3 {
+    margin-bottom: 15px;
+    color: #181818;
+}
 /* SERVICES */
 .service-grid {
     display: grid;
@@ -45,19 +119,110 @@ h2 {
     font-weight: 500;
 }
 
-/* FACILITIES */
-.facilities ul {
-    list-style: none;
+
+
+/* WHY US */
+.why-us {
+    padding: 60px;
+    background: #f4f7fb;
+    text-align: center;
 }
 
-.facilities li {
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.slider-window {
+    overflow: hidden;
+    width: 900px; /* 3 cards visible */
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.why-card {
+    min-width: 300px;
+    margin: 0 10px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.why-card h3 {
+    color: #0d6efd;
     margin-bottom: 10px;
 }
 
-/* WHY US */
-.why-grid {
+/* NAV BUTTONS */
+.nav-btn {
+    
+    color: rgb(18, 18, 18);
+    border: none;
+    font-size: 30px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background: #9cacc4;
+}
+
+
+.footer {
+    background-color: #0d6efd;
+    color: #ffffff;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+.footer-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    font-weight: 500;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 80px;
+}
+
+.footer-box h3,
+.footer-box h4 {
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #0b5ed7;
+    margin-top: 30px;
+    font-size: 14px;
 }

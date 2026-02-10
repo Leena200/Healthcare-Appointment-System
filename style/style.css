@@ -1,8 +1,71 @@
 body {
     font-family: 'Segoe UI', sans-serif;
-    padding-top: 80px;
+ 
     background-color: #f9fafb;
 }
+
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #0d6efd;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.login-btn {
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+}
+
+.register-btn {
+    background-color: #0d6efd;
+    color: white;
+}
+
 
 /* HERO SECTION */
 .hero-section {
@@ -51,6 +114,51 @@ body {
 /* FOOTER */
 .footer {
     background-color: #0d6efd;
-    color: white;
-    padding: 25px 0;
+    color: #ffffff;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 0 80px;
+}
+
+.footer-box h3,
+.footer-box h4 {
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-box ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-box ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background-color: #0b5ed7;
+    margin-top: 30px;
+    font-size: 14px;
 }
